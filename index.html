@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+
+    <!-- Section 1: Basic Info -->
+    <div class="section-title"><span class="dot"></span> Your basic info</div>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" class="form-input first-name" id="firstName" name="firstName" placeholder="Enter your first name"
+      required />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" class="form-input last-name" id="lastName" name="lastName" placeholder="Enter your last name"
+      required />
+
+    <label for="email">Email Address:</label>
+    <input type="email" class="form-input email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" class="form-input password" id="password" name="password" placeholder="Enter your password"
+      minlength="8" required />
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" class="form-input confirm-password" id="confirmPassword" name="confirmPassword"
+      placeholder="Confirm your password" minlength="8" required />
+
+    <!-- Section 2: Other Details -->
+    <div class="section-title"><span class="dot"></span> Other details</div>
+
+    <label>Birth Date:</label>
+    <input type="date" class="form-input dob" name="dob" required />
+
+    <label>Gender:</label>
+    <div class="gender-options">
+      <label>
+        <input type="radio" class="gender" name="gender" value="Male" required />
+        Male
+      </label>
+      <label>
+        <input type="radio" class="gender" name="gender" value="Female" required />
+        Female
+      </label>
+      <label>
+        <input type="radio" class="gender" name="gender" value="Other" required />
+        Other
+      </label>
+    </div>
+
+    <label for="about">About Me:</label>
+    <textarea class="form-input about" id="about" name="about" placeholder="Tell us something about yourself"
+      rows="4"></textarea>
+
+    <label for="profession">Choose Your Profession:</label>
+    <select class="form-input profession" id="profession" name="profession" required>
+      <option value="">-- Select Profession --</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Data Analytics">Data Analytics</option>
+      <option value="UI/UX Design">UI/UX Design</option>
+      <option value="Cybersecurity">Cybersecurity</option>
+    </select>
+
+    <!-- Terms -->
+    <div class="terms">
+      <input type="checkbox" class="terms-check" id="terms-check" required />
+      <label for="terms-check">I'm accepting Terms and Conditions</label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </div>
+</body>
+
+</html>
